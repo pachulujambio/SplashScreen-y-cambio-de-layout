@@ -23,7 +23,7 @@ new Handler().postDelayed(new Runnable() {
 
 De esta manera estamos indicandole al programa que pasado los 2 segundos (ya que el tiempo se define en ms) ejecute lo que contiene dentro del método creado (un `Intent` para cambiar de layout).
 
-## Intent
+## `Intent`
 En Android, la habilidad de enviar mensajes es posible por el objeto Intent. Con la ayuda de los intents, los componentes de Android pueden solicitar funcionalidad de otros componentes Android. Todos los componentes (aplicaciones y pantallas) del dispositivo Android están aisladas. La única manera de comunicarse entre ellas es a través de intents.
 
 [Documentación Intent y filtros Intent](https://developer.android.com/guide/components/intents-filters?hl=es-419 "Documentación Intent")
