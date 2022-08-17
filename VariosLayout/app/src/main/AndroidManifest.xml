@@ -7,26 +7,36 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo_amarillo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo_amarillo"
         android:supportsRtl="true"
         android:theme="@style/Theme.LayoutTest"
         tools:targetApi="31">
         <activity
-            android:name=".NoTanBuenos"
-            android:exported="false" />
-        <activity
-            android:name=".Buenos"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            //Indicamos que el programa inicie desde este layout
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".NoTanBuenos"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/> //retira la barra superior
+        <activity
+            android:name=".Buenos"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         </activity>
     </application>
 
