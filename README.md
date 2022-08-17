@@ -6,7 +6,7 @@ Un Splash Screen consiste en una pantalla inicial que muestra el logotipo de la 
 
 Para empezar debemos crear un `Empty Activity`, lo cual hacemos de esta forma:
 
-![Crear un Empty ACtivity](\Escritorio/emptyactivity.png)
+![Crear un Empty ACtivity](emptyactivity.png)
 
 Dentro del `OnCreate` del `Activity` creado debemos crear una clase `Handler` con el método `postDelayed`.
 
